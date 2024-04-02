@@ -1,38 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Coding Bootcamp Testimonials Slider</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+	<meta charset="UTF-8">
+	<meta name="description" content="Frontend Mentor Challenge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+	<title>Coding Bootcamp Testimonials Slider</title>
 </head>
+
 <body>
+	<main>
+		<h1 class="sr-only">Testimonials</h1>
+		<section class="slider" aria-roledescription="slider" aria-label="Student testimonials">
+			<div class="testimonials">
+				<div id="testimonial1" class="testimonial" role="group" aria-roledescription="slide" aria-hidden="false" aria-labelledby="testimonial-person1">
+					<div class="testimonial-picture-container">
+						<img src="images/image-tanya.jpg" alt="" class="testimonial-picture" width="450" height="450">
+					</div>
+					<blockquote class="testimonial-blockquote">
+						<p class="testimonial-quote">
+							&#8220; I've been interested in coding for a while but never taken the jump, until now.
+							I couldn't recommend this course enough. I'm now in the job of my dreams and so
+							excited about the future. &#8221;
+						</p>
+						<footer>
+							<cite class="testimonial-cite">
+								<span id="testimonial-person1" class="testimonial-person">Tanya Sinclair</span> 
+								<span class="testimonial-type">UX Engineer</span>
+							</cite>
+						</footer>
+					</blockquote>
+				</div>
 
-  “ I’ve been interested in coding for a while but never taken the jump, until now. 
-  I couldn’t recommend this course enough. I’m now in the job of my dreams and so 
-  excited about the future. ”
+				<div id="testimonial2" class="testimonial" role="group" aria-roledescription="slide" aria-hidden="true" aria-labelledby="testimonial-person2">
+					<div class="testimonial-picture-container">
+						<img src="images/image-john.jpg" alt="" class="testimonial-picture" width="450" height="450">
+					</div>
+					<blockquote class="testimonial-blockquote">
+						<p class="testimonial-quote">
+							&#8220; If you want to lay the best foundation possible I'd recommend taking this course.
+							The depth the instructors go into is incredible. I now feel so confident about
+							starting up as a professional developer. &#8221;
+						</p>
+						<footer>
+							<cite class="testimonial-cite">
+								<span id="testimonial-person2" class="testimonial-person">Sarthak Sachdev</span> 
+								<span class="testimonial-type">Junior Front-end Developer</span>
+							</cite>
+						</footer>
+					</blockquote>
+				</div>
+			</div>
 
-  Tanya Sinclair
-  UX Engineer
-
-  “ If you want to lay the best foundation possible I’d recommend taking this course. 
-  The depth the instructors go into is incredible. I now feel so confident about 
-  starting up as a professional developer. ”
-
-  John Tarkpor
-  Junior Front-end Developer
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+			<div class="buttons" role="group">
+				<button id="slider-button-previous" class="slider-button slider-button-previous">
+					<span class="sr-only">Previous Testimonial</span>
+				</button>
+				<button id="slider-button-next" class="slider-button slider-button-next">
+					<span class="sr-only">Next Testimonial</span>
+				</button>
+			</div>
+		</section>
+	</main>
+	<script src="script.js"></script>
 </body>
+
 </html>
